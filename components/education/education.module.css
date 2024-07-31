@@ -198,9 +198,9 @@ width: 60%;
 
 .fotoPerfil {
   width: 100px;
-  height: 100px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 30%;
+  border-radius: 5%;
 }
 
 .rightBlock {
@@ -426,8 +426,8 @@ margin-right: -120px;
 }
 
 .conteinerAbout2 img {
-  height: 250px;
-  border-radius: 100px;
+  height: 350px;
+  border-radius: 50px;
   margin-right: 20px;
 }
 

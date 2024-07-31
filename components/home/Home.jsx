@@ -48,8 +48,8 @@ const Home = () => {
           <div className={style.conteinerTitle}>
             <div className={style.titleLiteral}>
               <h1>
-                <span className={style.textGradientt}>Tiago Insaurralde - Entrenador personal</span>
-                <span className={style.tecnico}> Todo sobre entrenamiento para lograr tus objetivos</span>
+                <span className={style.textGradientt}>KineTiago - Entrenamiento basado en evidencia</span>
+                <span className={style.tecnico}>  Actualización constante para ayudarte con tus objetivos</span>
               </h1>
             </div>
             <img src={linearoja} className={style.linearoja} />
@@ -68,15 +68,13 @@ const Home = () => {
             <TwoCardBlock
               Icon={CgGym}
               title="Entrenamiento"
-              text1="Incluye evaluación funcional, planificación semanal del entrenamiento adaptado
-              a las necesidades y objetivos individuales, etc."
+              text1="Servicio que incluye evaluación funcional, planificación semanal del entrenamiento adaptado a las necesidades y objetivos individuales, etc."
 
             />
             <TwoCardBlock
               Icon={IoFitness}
               title="Rehabilitación "
-              text2="Incluye evaluación funcional, planificación semanal del entrenamiento adaptado
-              a las necesidades y objetivos individuales, etc."
+              text2="Sesiones virtuales programadas, evaluación constante de sintomatología, progresión de cargas, vuelta a la actividad deportiva/laboral/cotidiana, educación del paciente, asesoría 24hs."
             />
           </div>
         </div>
