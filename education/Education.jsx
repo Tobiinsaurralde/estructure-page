@@ -94,14 +94,16 @@ const TwoCardBlock = ({ title1, text1, title2, text2, url1, url2 }) => {
 const FAQ = ({ question, answer, isOpen, onClick }) => {
   return (
     <div className={style.faqItem}>
-      <div className={style.faqQuestion} onClick={onClick}>
+      <div 
+        className={`${style.faqQuestion} ${isOpen ? style.open : ''}`} 
+        onClick={onClick}
+      >
         {question}
       </div>
       {isOpen && <div className={style.faqAnswer}>{answer}</div>}
     </div>
   );
 };
-
 function Education() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [openFAQIndex, setOpenFAQIndex] = useState(null);
@@ -153,16 +155,7 @@ function Education() {
       text: 'Evaluaremos los avances logrados a través de gráficas automatizadas aportarán información tanto de tu desempeño como de otros datos corporales.',
       image: card1,
     },
-    {
-      title: 'Dieta 100% adaptada a tus necesidades',
-      text: 'Crearemos un plan de alimentación que te resulte cómodo y accesible que permita alcanzar los objetivos.',
-      image: card2,
-    },
-    {
-      title: 'Informe y revisón técnica de ejercicios',
-      text: 'En cada revisión, tendrás un informe que abordará tus avances y las correcciones técnicas de los ejercicios. Además de un contacto por WhatsApp conmigo.',
-      image: card3,
-    },
+   
   ];
   const transparentCardsData = [
     {
@@ -197,7 +190,7 @@ function Education() {
       answer: 'No necesitas equipo especial para comenzar. Sin embargo, tener acceso a algunos equipos básicos como pesas o bandas de resistencia puede ser beneficioso para tu progreso.',
     },
     {
-      question: '¿¿Qué métodos de pago aceptas para el servicio de entrenamiento?',
+      question: '¿Qué métodos de pago aceptas para el servicio de entrenamiento?',
       answer: 'ghhjkvjfdyjdktñtrydhgcftlirydjfgkñotyfjgoñydgjhgulydgchjvf',
     },
   ];
@@ -292,17 +285,16 @@ function Education() {
         </div>
 
         <div className={style.faqContainer}>
-          {faqData.map((faq, index) => (
-            <FAQ
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openFAQIndex === index}
-              onClick={() => handleFAQClick(index)}
-            />
-          ))}
-        </div>
-
+  {faqData.map((faq, index) => (
+    <FAQ
+      key={index}
+      question={faq.question}
+      answer={faq.answer}
+      isOpen={openFAQIndex === index}
+      onClick={() => handleFAQClick(index)}
+    />
+  ))}
+</div>
             <div className={style.blackBlock}>
           <div className={style.services}>
             <h3>Servicios:</h3>

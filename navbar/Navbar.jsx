@@ -59,8 +59,8 @@ function Navbar() {
         <li className={style.desktopli}>
           <Link to="/entrenador-online">ENTRENAMIENTO ONLINE</Link>
         </li>
-        {/*}<li className={style.desktopli}>
-          <Link
+         {/* <li className={style.desktopli}>
+        <Link
             to="rehabilitación"
             smooth={true}
             duration={500}
@@ -68,7 +68,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            REHABILITACIÓN
+            BLOG
           </Link>
         </li>*/}
         <li className={style.desktopli}>
@@ -105,7 +105,7 @@ function Navbar() {
 
           <div className={style.sidebarUl}>
             <ul>
-          {/*  <li>
+            <li>
                 <Link
                   onClick={toggleSidebar}
                   to="about"
@@ -116,36 +116,21 @@ function Navbar() {
                   exact="true"
                 >
                   <img src={aboutMe} alt="aboput" />
-                 Entrenamientos Online
-                </Link>
-              </li>*/}
-              <li>
-                <Link
-                  onClick={toggleSidebar}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={aboutMe} alt="aboput" />
-                  Sobre mí
+                 Inicio
                 </Link>
               </li>
-            
               <li>
                 <Link
                   onClick={toggleSidebar}
-                  to="education"
+                  to="about"
                   smooth={true}
                   duration={500}
                   offset={-70}
                   spy={true}
                   exact="true"
                 >
-                  <img src={school} alt="school" />
-                  Educación
+                  <img src={aboutMe} alt="aboput" />
+                 Entrenamiento Online
                 </Link>
               </li>
               <li>
@@ -159,7 +144,7 @@ function Navbar() {
                   exact="true"
                 >
                   <img src={user} alt="contacto" />
-                  Contacto
+                  Sobre Mí
                 </Link>
               </li>
               <li>
@@ -176,11 +161,9 @@ function Navbar() {
                   Asesorias
                 </Link>*/}
               </li>
-            
             </ul>
           </div>
-          <div className={style.bottomAside}>
-            <p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p>
+          <div>
           </div>
         </div>
       )}

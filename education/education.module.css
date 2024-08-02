@@ -25,6 +25,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 40px;
 }
 .cardd {
   width: 28%;
@@ -190,17 +191,13 @@ width: 60%;
 .leftBlock h2 {
   margin-bottom: 20px;
 }
-.fotoPerfill {
-  width: 250px;
-  height: 100px;
-  object-fit: cover;
-}
+
 
 .fotoPerfil {
-  width: 100px;
-  height: 200px;
+  width: 170px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 15%;
 }
 
 .rightBlock {
@@ -232,34 +229,6 @@ width: 60%;
   flex-wrap: wrap;
   width: 100%;
   margin: 20px 0;
-}
-
-.faqContainer {
-  width: 100%;
-  margin: 20px 0;
-}
-
-.faqItem {
-  width: 100%;
-  background-color: transparent;
-
-  border: 1px solid #b1a5a5;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-
-.faqQuestion {
-  padding: 15px;
-  background-color: transparent;
-  cursor: pointer;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
-}
-
-.faqAnswer {
-  padding: 15px;
-  background-color: #fff;
 }
 
 
@@ -344,6 +313,69 @@ margin-right: -120px;
   display: block;
   margin: 0 auto;
 }
+.faqContainer {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.faqItem {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  transform: scale(1.02);
+}
+
+.faqQuestion {
+  padding: 15px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faqQuestion::after {
+  content: '▼';
+  font-size: 0.9em;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.faqQuestion.open {
+  color: #ff0000;
+  background-color: #f2f2f2;
+}
+
+.faqQuestion.open::after {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 1em;
+  line-height: 1.5;
+  transition: max-height 0.3s ease;
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+
 
 .containerAbout {
   display: flex;
